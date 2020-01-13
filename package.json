@@ -1,0 +1,30 @@
+{
+  "name": "@octopuses/octopus-end-web",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "files": ["/lib"],
+  "scripts": {
+    "dev": "node ./lib/index.test.js",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "link": "yarn link"
+  },
+  "keywords": [
+    "octopus",
+    "nodejs"
+  ],
+  "author": "Chad",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.4"
+  }
+}
